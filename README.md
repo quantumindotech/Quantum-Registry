@@ -57,8 +57,8 @@ Minimal berisi:
 ● Community
 ● Contact
 
-QuantumRegistry bukan tempat menyimpan semua data. QuantumRegistry adalah tempat yang menghubungkan semua bukti.
-Berangkat. ✈️:
+### QuantumRegistry bukan tempat menyimpan semua data. QuantumRegistry adalah tempat yang menghubungkan semua bukti.
+
 
 ## QuantumRegistry v0.3 Schema Design
 
