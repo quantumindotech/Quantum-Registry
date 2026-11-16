@@ -8,7 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@openrouter/sdk": "^0.10.0"
+    "@openrouter/sdk": "^1.5.103"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
