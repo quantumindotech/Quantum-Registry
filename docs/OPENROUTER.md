@@ -12,7 +12,7 @@ This repository uses the official TypeScript SDK, `@openrouter/sdk`, from the se
 Optional model override:
 
 ```dotenv
-OPENROUTER_MODEL=openai/gpt-5.2
+OPENROUTER_MODEL=openai/gpt-5.5
 ```
 
 Use a model slug from https://openrouter.ai/models.
