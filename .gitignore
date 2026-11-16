@@ -25,3 +25,6 @@ cache/
 
 temp/
 tmp/
+
+# Keep the template tracked; real environment files remain ignored.
+!.env.example
