@@ -1,6 +1,6 @@
 import { OpenRouter } from "@openrouter/sdk";
 
-const DEFAULT_MODEL = "openai/gpt-5.2";
+const DEFAULT_MODEL = "openai/gpt-5.5";
 
 export function createOpenRouterClient(): OpenRouter {
   const apiKey = process.env.OPENROUTER_API_KEY;
@@ -21,11 +21,15 @@ export async function askOpenRouter(prompt: string): Promise<string> {
 
   try {
     const response = await client.chat.send({
-      chatGenerationParams: {
+      chatRequest: {
         model,
         messages: [{ role: "user", content: prompt }],
       },
     });
+
+    if (response instanceof ReadableStream) {
+      throw new Error("Expected a non-streaming OpenRouter response.");
+    }
 
     const text = response.choices?.[0]?.message?.content;
     if (typeof text !== "string" || text.length === 0) {
